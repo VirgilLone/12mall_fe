@@ -1,0 +1,19 @@
+{
+  "name": "12mall_fe",
+  "version": "1.0.0",
+  "description": "12mall",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VirgilLone/12mall_fe.git"
+  },
+  "author": "Virgil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VirgilLone/12mall_fe/issues"
+  },
+  "homepage": "https://github.com/VirgilLone/12mall_fe#readme"
+}
