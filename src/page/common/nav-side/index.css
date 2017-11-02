@@ -1,0 +1,28 @@
+/*
+* @Author: WYluo
+* @Date:   2017-10-31 00:45:19
+* @Last Modified by:   WYluo
+* @Last Modified time: 2017-10-31 02:12:47
+*/
+
+/* 左侧导航主体 */
+.nav-side{
+    float: left;
+    width: 130px;
+    min-height: 100px;
+}
+.nav-side .nav-item{
+    line-height: 25px;
+    font-size: 13px;
+}
+.nav-side .nav-item .link{
+    color: #888;
+}
+.nav-side .nav-item.active .link{
+    color: #c60023;
+}
+/* 右侧内容区 */
+.content.with-nav{
+    float: left;
+    width: 950px;
+}

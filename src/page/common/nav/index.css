@@ -1,0 +1,30 @@
+/*
+* @Author: WYluo
+* @Date:   2017-10-30 01:12:59
+* @Last Modified by:   WYluo
+* @Last Modified time: 2017-10-30 21:42:27
+*/
+
+.nav{
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+/* 用户部分 */
+.nav .user{
+    float: left;
+}
+.nav .user.in-login{
+    display: none;
+}
+.nav .user .link{
+    margin-right: 5px;
+}
+/* 导航链接部分 */
+.nav .nav-list{
+    float: right;
+}
+.nav .nav-list .nav-item{
+    display: inline-block;
+    margin-left: 5px;
+}

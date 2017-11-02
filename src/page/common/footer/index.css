@@ -1,0 +1,22 @@
+/*
+* @Author: WYluo
+* @Date:   2017-10-30 21:58:02
+* @Last Modified by:   WYluo
+* @Last Modified time: 2017-10-30 23:07:57
+*/
+.footer{
+    padding-bottom: 10px;
+}
+.footer .links{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .links .link{
+    padding: 0 10px;
+}
+.footer .copyright{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
