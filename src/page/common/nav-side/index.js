@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-10-31 00:44:36
 * @Last Modified by:   WYluo
-* @Last Modified time: 2017-10-31 01:58:50
+* @Last Modified time: 2017-11-07 01:02:42
 */
 
 'use strict';
@@ -17,7 +17,7 @@ var navSide = {
         navSideList : [
             {name:'user-center',desc:'个人中心',href:'./user-center.html'},
             {name:'order-list',desc:'我的订单',href:'./order-list.html'},
-            {name:'update-pass',desc:'修改密码',href:'./update-pass.html'},
+            {name:'user-update-pass',desc:'修改密码',href:'./user-update-pass.html'},
             {name:'about',desc:'关于yier街',href:'./about.html'}
         ]
     },
@@ -37,8 +37,8 @@ var navSide = {
         // 渲染list数据
         var navHtml= _mm.renderHtml(templateIndex,{
             navSideList : this.option.navSideList
-        });
-        // 把html放入容器
+        });//renderHtml的参数传模板和数据
+        // 把html放入容器ul中
         $('.nav-side').html(navHtml);
     },
     

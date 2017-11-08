@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-10-26 23:13:41
 * @Last Modified by:   WYluo
-* @Last Modified time: 2017-10-31 02:22:42
+* @Last Modified time: 2017-11-07 01:01:24
 */
  const path = require('path');
 
@@ -31,10 +31,16 @@
  var config = {
      //entry: './src/page/index/index.js',
      entry: {
-        'common':['./src/page/common/index.js'],
-        'index':['./src/page/index/index.js'],
-        'login':['./src/page/login/index.js'],
-        'result':['./src/page/result/index.js'],
+        'common'            :['./src/page/common/index.js'],
+        'index'             :['./src/page/index/index.js'],
+        'user-login'        :['./src/page/user-login/index.js'],
+        'user-register'     :['./src/page/user-register666/index.js'],
+        'user-find-pass'    :['./src/page/user-find-pass/index.js'],
+        'result'            :['./src/page/result/index.js'],
+        'user-center'       :['./src/page/user-center/index.js'],
+        'user-center-update':['./src/page/user-center-update/index.js'],
+        'user-update-pass'  :['./src/page/user-update-pass/index.js']
+
      },
      output: {
          path: path.resolve(__dirname, 'dist'),
@@ -68,7 +74,7 @@
         // 独立通用模块到js/base.js
         new webpack.optimize.CommonsChunkPlugin({
             name    :'common',//加载全局模块
-            filename:'js/base.js'
+            filename:'js/bases.js'
         }),
         // 把css单独打包到文件里
         new ExtractTextPlugin("css/[name].css"),
@@ -82,8 +88,14 @@
         }),*/
         //优化HtmlWebpackPlugin
         new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
-        new HtmlWebpackPlugin(getHtmlConfig('login','用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-register','会员注册')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-find-pass','找回密码')),
         new HtmlWebpackPlugin(getHtmlConfig('result','操作结果')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center','个人中心')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center-update','修改个人信息')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-update-pass','修改密码')),
+
      ]
 
  };

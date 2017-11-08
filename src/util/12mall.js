@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-10-28 14:31:58
 * @Last Modified by:   WYluo
-* @Last Modified time: 2017-10-29 15:50:08
+* @Last Modified time: 2017-11-08 00:51:29
 */
 
 'use strict';
@@ -39,7 +39,7 @@ var _mm={
         });
     },
     //获取服务器地址
-    getServerUrl : function(){
+    getServerUrl : function(path){
         return conf.serverHost+path;
     },
     //根据参数名称获取url参数的值
@@ -79,7 +79,7 @@ var _mm={
     },
     //统一登陆跳转
     doLogin : function(){
-        window.location.href='./login.html?redirect='+encodeURIComponent(window.location.href);
+        window.location.href='./user-login.html?redirect='+encodeURIComponent(window.location.href);
     },
     goHome : function(){
         window.location.href='./index.html';

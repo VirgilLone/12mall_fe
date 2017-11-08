@@ -9,10 +9,19 @@
 <body>
     <%= require('html-loader!./layout/nav-simple.html') %>
     <div class="page-wrap">
+        <!-- result-con样式默认隐藏，根据url参数判断哪个div显示 -->
         <div class="result-con default-success">
             <h1 class="result-title">恭喜你，操作成功！</h1>
             <div class="result-content">
                 <a class="link" href="./index.html">回到首页</a>
+                <a class="link" href="./user-login.html">立即登录</a>
+            </div>
+        </div>
+        <div class="result-con pass-reset-success">
+            <h1 class="result-title">恭喜你，重置密码成功！</h1>
+            <div class="result-content">
+                <a class="link" href="./index.html">回到首页</a>
+                <a class="link" href="./user-login.html">立即登录</a>
             </div>
         </div>
         <div class="result-con register-success">
