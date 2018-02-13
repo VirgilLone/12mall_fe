@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-10-28 14:31:58
 * @Last Modified by:   WYluo
-* @Last Modified time: 2017-11-08 00:51:29
+* @Last Modified time: 2018-01-04 17:15:38
 */
 
 'use strict';
@@ -27,7 +27,7 @@ var _mm={
                     typeof param.success==='function' && param.success(res.data,res.msg)
                 }
                 else if(10===res.status){//需要登录
-                    _this.doLogin();
+                    //_this.doLogin();
                 }
                 else if(0===res.status){//请求数据错误
                     typeof param.error==='function' && param.error(res.msg)

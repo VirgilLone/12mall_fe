@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-10-30 01:12:52
 * @Last Modified by:   WYluo
-* @Last Modified time: 2017-11-08 00:55:00
+* @Last Modified time: 2018-01-04 16:31:45
 */
 
 'use strict';
@@ -42,7 +42,7 @@ var nav = {
             $('.user.not-login').hide().siblings('.user.in-login').show()
                 .find('.username').text(res.username);
         }, function(errMsg){
-            // do nothing
+            $('.user.not-login').show().siblings('.user.in-login').hide();
         });
     },
     // 加载购物车数量

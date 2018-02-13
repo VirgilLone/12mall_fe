@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-10-26 23:13:41
 * @Last Modified by:   WYluo
-* @Last Modified time: 2017-11-07 01:01:24
+* @Last Modified time: 2018-02-14 00:23:59
 */
  const path = require('path');
 
@@ -33,6 +33,9 @@
      entry: {
         'common'            :['./src/page/common/index.js'],
         'index'             :['./src/page/index/index.js'],
+        'list'              :['./src/page/list/index.js'],
+        'detail'            :['./src/page/detail/index.js'],
+        'cart'              :['./src/page/cart/index.js'],
         'user-login'        :['./src/page/user-login/index.js'],
         'user-register'     :['./src/page/user-register666/index.js'],
         'user-find-pass'    :['./src/page/user-find-pass/index.js'],
@@ -40,7 +43,7 @@
         'user-center'       :['./src/page/user-center/index.js'],
         'user-center-update':['./src/page/user-center-update/index.js'],
         'user-update-pass'  :['./src/page/user-update-pass/index.js']
-
+           
      },
      output: {
          path: path.resolve(__dirname, 'dist'),
@@ -88,6 +91,9 @@
         }),*/
         //优化HtmlWebpackPlugin
         new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
+        new HtmlWebpackPlugin(getHtmlConfig('list','商品列表')),
+        new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情')),
+        new HtmlWebpackPlugin(getHtmlConfig('cart','购物车')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register','会员注册')),
         new HtmlWebpackPlugin(getHtmlConfig('user-find-pass','找回密码')),

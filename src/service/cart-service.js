@@ -2,7 +2,7 @@
 * @Author: Rosen
 * @Date:   2017-05-17 18:55:04
 * @Last Modified by:   WYluo
-* @Last Modified time: 2017-11-08 00:18:27
+* @Last Modified time: 2018-02-14 04:23:31
 */
 
 'use strict';
@@ -49,7 +49,7 @@ var _cart = {
     // 取消选择购物车商品
     unselectProduct : function(productId, resolve, reject){
         _mm.request({
-            url     : _mm.getServerUrl('/cart/un_select.do'),
+            url     : _mm.getServerUrl('/cart/unSelect.do'),
             data    : {
                 productId : productId
             },
@@ -68,7 +68,7 @@ var _cart = {
     // 取消选中全部商品
     unselectAllProduct : function(resolve, reject){
         _mm.request({
-            url     : _mm.getServerUrl('/cart/un_select_all.do'),
+            url     : _mm.getServerUrl('/cart/unSelect_all.do'),
             success : resolve,
             error   : reject
         });
@@ -85,7 +85,7 @@ var _cart = {
     // 删除指定商品
     deleteProduct : function(productIds, resolve, reject){
         _mm.request({
-            url     : _mm.getServerUrl('/cart/delete_product.do'),
+            url     : _mm.getServerUrl('/cart/delete.do'),
             data    : {
                 productIds : productIds
             },
