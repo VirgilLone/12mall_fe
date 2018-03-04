@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-11-05 22:35:51
 * @Last Modified by:   WYluo
-* @Last Modified time: 2017-11-07 00:50:44
+* @Last Modified time: 2018-03-04 18:28:59
 */
 
 'use strict';
@@ -43,8 +43,9 @@ var page = {
             validateResult = _this.validateForm(userInfo);
             if(validateResult.status){
                 // 更改用户信息
-                _user.updateUserInfo(userInfo, function(res, msg){
+                _user.updateUserInfo(userInfo, function(res,msg){
                     _mm.successTips(msg);
+                    //alert(JSON.stringify(res));
                     window.location.href = './user-center.html';
                 }, function(errMsg){
                     _mm.errorTips(errMsg);

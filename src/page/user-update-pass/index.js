@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-11-07 00:56:36
 * @Last Modified by:   WYluo
-* @Last Modified time: 2018-03-03 22:48:59
+* @Last Modified time: 2018-03-04 18:29:07
 */
 
 'use strict';
@@ -40,8 +40,9 @@ var page = {
                 _user.updatePassword({
                     pwdOld : userInfo.password,
                     pwdNew : userInfo.passwordNew
-                }, function(res){
-                    _mm.successTips(res);
+                }, function(res, msg){
+                    _mm.successTips(msg);
+                    window.location.href = './user-update-pass.html';
                 }, function(errMsg){
                     _mm.errorTips(errMsg);
                 });

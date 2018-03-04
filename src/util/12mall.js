@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-10-28 14:31:58
 * @Last Modified by:   WYluo
-* @Last Modified time: 2018-02-28 16:23:25
+* @Last Modified time: 2018-03-04 18:28:43
 */
 
 'use strict';
@@ -23,8 +23,8 @@ var _mm={
             dataType: param.type   ||'json',
             data    : param.data   || '',
             success : function(res){
-                if(1===res.status){//请求成功
-                    typeof param.success==='function' && param.success(res.data,res.status)
+                if(1===res.status){//后端返回对象的status=1则请求成功
+                    typeof param.success==='function' && param.success(res.data,res.msg)
                 }
                 else if(10===res.status){//需要登录
                     //todo

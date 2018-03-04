@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2018-03-04 13:03:03
 * @Last Modified by:   WYluo
-* @Last Modified time: 2018-03-04 14:24:42
+* @Last Modified time: 2018-03-04 16:33:32
 */
 
 'use strict';
@@ -63,7 +63,7 @@ var page = {
         });
     },
     dataFilter : function(data){
-        data.needPay      = data.status==10;//未支付
+        data.needPay      = data.status==10;//10为未支付
         data.isCancelable = data.status==10;
     },
     

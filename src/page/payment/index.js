@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2018-03-04 14:55:05
 * @Last Modified by:   WYluo
-* @Last Modified time: 2018-03-04 15:33:15
+* @Last Modified time: 2018-03-04 16:01:09
 */
 
 'use strict';
@@ -42,7 +42,7 @@ var page = {
             $pageWrap.html('<p class="err-tips">'+errMsg+'</p>');
         });
     },
-    //监听订单状态
+    //二维码界面监听订单状态
     listenOrderStatus : function(){
         var _this=this;
         this.paymentTimer=window.setInterval(function(){
