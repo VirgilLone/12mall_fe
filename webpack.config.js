@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-10-26 23:13:41
 * @Last Modified by:   WYluo
-* @Last Modified time: 2018-03-03 22:36:40
+* @Last Modified time: 2018-03-04 14:54:33
 */
  const path = require('path');
 
@@ -39,6 +39,7 @@
         'order-confirm'     :['./src/page/order-confirm/index.js'],
         'order-list'        :['./src/page/order-list/index.js'],
         'order-detail'      :['./src/page/order-detail/index.js'],
+        'payment'           :['./src/page/payment/index.js'],
         'user-login'        :['./src/page/user-login/index.js'],
         'user-register'     :['./src/page/user-register666/index.js'],
         'user-find-pass'    :['./src/page/user-find-pass/index.js'],
@@ -100,6 +101,7 @@
         new HtmlWebpackPlugin(getHtmlConfig('order-confirm','订单确认')),
         new HtmlWebpackPlugin(getHtmlConfig('order-list','订单列表')),
         new HtmlWebpackPlugin(getHtmlConfig('order-detail','订单详情')),
+        new HtmlWebpackPlugin(getHtmlConfig('payment','订单支付')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register','会员注册')),
         new HtmlWebpackPlugin(getHtmlConfig('user-find-pass','找回密码')),
