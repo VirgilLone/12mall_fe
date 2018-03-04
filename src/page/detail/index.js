@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-11-18 22:12:28
 * @Last Modified by:   WYluo
-* @Last Modified time: 2017-12-03 22:22:53
+* @Last Modified time: 2018-02-15 00:14:19
 */
 
 'use strict';
@@ -78,7 +78,7 @@ var page = {
             html = _mm.renderHtml(templateIndex, res);
             $pageWrap.html(html);
         }, function(errMsg){
-            $pageWrap.html('<p class="err-tip">此商品太淘气，找不到了</p>');
+            $pageWrap.html('<p class="err-tip">咦！淘气的商品去哪啦~~~</p>');
         });
     },
     // 数据匹配

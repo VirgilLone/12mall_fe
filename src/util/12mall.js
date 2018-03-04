@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-10-28 14:31:58
 * @Last Modified by:   WYluo
-* @Last Modified time: 2018-01-04 17:15:38
+* @Last Modified time: 2018-02-28 16:23:25
 */
 
 'use strict';
@@ -24,10 +24,13 @@ var _mm={
             data    : param.data   || '',
             success : function(res){
                 if(1===res.status){//请求成功
-                    typeof param.success==='function' && param.success(res.data,res.msg)
+                    typeof param.success==='function' && param.success(res.data,res.status)
                 }
                 else if(10===res.status){//需要登录
-                    //_this.doLogin();
+                    //todo
+                    //为了解决在不登录的情况下加载了nav购物车和用户信息而导致总是跳转到登录页，此处暂时注释。
+                    //后期仍要解决在不登录的情况下能够访问首页，搜索页等不需要登录信息的页面
+                    _this.doLogin();
                 }
                 else if(0===res.status){//请求数据错误
                     typeof param.error==='function' && param.error(res.msg)
