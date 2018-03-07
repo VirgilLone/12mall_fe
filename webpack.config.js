@@ -2,7 +2,7 @@
 * @Author: WYluo
 * @Date:   2017-10-26 23:13:41
 * @Last Modified by:   WYluo
-* @Last Modified time: 2018-03-04 14:54:33
+* @Last Modified time: 2018-03-05 23:33:44
 */
  const path = require('path');
 
@@ -20,6 +20,7 @@
         template    : './src/view/' + name + '.html',
         filename    : 'view/' + name + '.html',
         title       : title,
+        favicon     :'./favicon.ico',
         inject      : true,
         hash        : true,
         chunks      : ['common', name]
