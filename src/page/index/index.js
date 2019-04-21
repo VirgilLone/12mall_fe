@@ -2,11 +2,12 @@
 * @Author: WYluo
 * @Date:   2017-10-25 00:27:19
 * @Last Modified by:   WYluo
-* @Last Modified time: 2017-12-02 17:57:55
+* @Last Modified time: 2019-04-21 18:45:56
 */
 
 'use strict';
 require('./index.css');
+require('page/common/notice/index.js');
 require('page/common/nav/index.js');
 
 require('page/common/header/index.js');
